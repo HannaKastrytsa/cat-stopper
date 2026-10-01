@@ -1,0 +1,11 @@
+.vscode/**
+.github/**
+node_modules/**
+*.vsix
+.gitignore
+.DS_Store
+
+# Raw video sources — ship only media/cat2.mp4
+*.mp4
+media/cat1.mp4
+!media/cat2.mp4

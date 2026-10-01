@@ -1,0 +1,7 @@
+node_modules/
+*.vsix
+.DS_Store
+
+# Raw video sources — only media/cat2.mp4 ships with the extension
+/*.mp4
+/media/cat1.mp4

@@ -1,0 +1,106 @@
+{
+  "name": "cat-stopper",
+  "displayName": "Cat Stopper",
+  "description": "Pomodoro timer: work time, then a cat and countdown take over for the break.",
+  "version": "0.4.0",
+  "publisher": "HannaKastrytsa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HannaKastrytsa/cat-stopper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HannaKastrytsa/cat-stopper/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "break",
+    "cat",
+    "focus"
+  ],
+  "scripts": {
+    "package": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "catStopper.togglePause",
+        "title": "Cat Stopper: Pause / Resume Timer"
+      },
+      {
+        "command": "catStopper.startWork",
+        "title": "Cat Stopper: Start Work Session"
+      },
+      {
+        "command": "catStopper.startBreak",
+        "title": "Cat Stopper: Start Break Now"
+      },
+      {
+        "command": "catStopper.skipBreak",
+        "title": "Cat Stopper: Skip Break"
+      },
+      {
+        "command": "catStopper.reset",
+        "title": "Cat Stopper: Restart Timer"
+      },
+      {
+        "command": "catStopper.openSettings",
+        "title": "Cat Stopper: Open Timer Settings"
+      }
+    ],
+    "configuration": {
+      "title": "Cat Stopper",
+      "properties": {
+        "catStopper.workMinutes": {
+          "type": "number",
+          "default": 25,
+          "minimum": 0.05,
+          "description": "Length of a work session in minutes (decimals allowed, 0.25 = 15 seconds).",
+          "order": 1
+        },
+        "catStopper.breakMinutes": {
+          "type": "number",
+          "default": 5,
+          "minimum": 1,
+          "description": "Short break length in minutes.",
+          "order": 2
+        },
+        "catStopper.warnSecondsBefore": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "description": "Warn this many seconds before the break.",
+          "order": 5
+        },
+        "catStopper.longBreakMinutes": {
+          "type": "number",
+          "default": 15,
+          "minimum": 0.05,
+          "order": 3,
+          "description": "Long break length in minutes, taken after several work sessions."
+        },
+        "catStopper.sessionsBeforeLongBreak": {
+          "type": "number",
+          "default": 4,
+          "minimum": 1,
+          "order": 4,
+          "description": "Number of work sessions before a long break. Set 1 to always use the long break."
+        }
+      }
+    }
+  }
+}
