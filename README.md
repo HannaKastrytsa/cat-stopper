@@ -8,8 +8,6 @@ counts down your break. No cat, no code.
 - When the break starts, a cat video locks the editor until the countdown ends.
 - Long break automatically after a configurable number of work sessions.
 
-![Cat Stopper break screen](media/screenshot.png)
-
 ## Install
 
 1. Download the latest `cat-stopper-X.Y.Z.vsix` from
@@ -17,7 +15,7 @@ counts down your break. No cat, no code.
 2. Install it:
 
    ```sh
-   code --install-extension cat-stopper-v0.4.1.vsix
+   code --install-extension cat-stopper-v0.4.2.vsix
    ```
 
    Or in VS Code: **Extensions** panel → `...` menu → **Install from VSIX...**
@@ -57,7 +55,7 @@ git clone https://github.com/HannaKastrytsa/cat-stopper.git
 cd cat-stopper
 npm install
 npm run package
-code --install-extension cat-stopper-0.4.1.vsix
+code --install-extension cat-stopper-0.4.2.vsix
 ```
 
 ## Releasing a new version

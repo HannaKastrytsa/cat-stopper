@@ -2,7 +2,7 @@
   "name": "cat-stopper",
   "displayName": "Cat Stopper",
   "description": "Pomodoro timer: work time, then a cat and countdown take over for the break.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "publisher": "HannaKastrytsa",
   "license": "MIT",
   "icon": "media/icon.png",
