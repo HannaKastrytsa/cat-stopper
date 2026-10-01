@@ -8,6 +8,8 @@ counts down your break. No cat, no code.
 - When the break starts, a cat video locks the editor until the countdown ends.
 - Long break automatically after a configurable number of work sessions.
 
+![Cat Stopper break screen](media/screenshot.png)
+
 ## Install
 
 1. Download the latest `cat-stopper-X.Y.Z.vsix` from
