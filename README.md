@@ -15,7 +15,7 @@ counts down your break. No cat, no code.
 2. Install it:
 
    ```sh
-   code --install-extension cat-stopper-0.4.0.vsix
+   code --install-extension cat-stopper-v0.4.0.vsix
    ```
 
    Or in VS Code: **Extensions** panel → `...` menu → **Install from VSIX...**
