@@ -1,5 +1,7 @@
 # Cat Stopper 🐱
 
+<img src="media/icon.png" alt="Cat Stopper" width="128" />
+
 A Pomodoro timer for VS Code. You work, then a cat takes over the screen and
 counts down your break. No cat, no code.
 
